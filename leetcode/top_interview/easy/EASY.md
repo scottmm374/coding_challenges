@@ -202,7 +202,7 @@ class Solution:
 </details>
 <br>
 
-### <span style="color: SandyBrown;">First Unique Character in a String/span>
+### <span style="color: #ffffff;">First Unique Character in a String</span>
 
 <details>
 <summary>View First Unique Character in a String</summary>
