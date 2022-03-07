@@ -51,3 +51,73 @@
 
 </details>
 </details>
+
+<details>
+<summary>Valid Annogram</summary>
+
+#### Instructions
+
+        Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+        An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+
+
+        Example 1:
+
+        Input: s = "anagram", t = "nagaram"
+        Output: true
+
+        Example 2:
+
+        Input: s = "rat", t = "car"
+        Output: false
+
+
+
+        Constraints:
+
+            1 <= s.length, t.length <= 5 * 104
+            s and t consist of lowercase English letters.
+
+<details>
+<summary>Solution</summary>
+
+```
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+
+        freq_dict = {}
+
+        if len(s) != len(t):
+            return False
+
+        for x in range(len(s)):
+            if s[x] not in freq_dict:
+                freq_dict[s[x]] = 1
+            else:
+                freq_dict[s[x]] += 1
+
+        for j in range(len(t)):
+            if t[j] in freq_dict:
+                freq_dict[t[j]] -=1
+
+
+        for key, val in freq_dict.items():
+            if val != 0:
+                return False
+
+        return True
+```
+
+</details>
+
+<details>
+<summary>Space/Time Results</summary>
+
+![Runtime](../../images/valid_anagram_runtime.png)
+![Space](../../images/valid_anagram_space.png)
+
+</details>
+
+</details>
