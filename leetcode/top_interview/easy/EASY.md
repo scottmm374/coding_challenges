@@ -1,3 +1,7 @@
+# EASY problems collection from top 100 interview Questions
+
+## Strings
+
 ### <span style="color: SandyBrown;">Reverse String with O(1) SPACE</span>
 
 <details>
@@ -126,6 +130,7 @@ class Solution:
 
 </details>
 </details>
+
 <br>
 
 ### <span style="color: SandyBrown;">Reverse Integer</span>
@@ -192,6 +197,138 @@ class Solution:
 ![Runtime](../../images/reverser_int.png)
 ![Space](../../images/reverse_int.png)
 
-## </details>
+</details>
 
 </details>
+<br>
+
+### <span style="color: SandyBrown;">First Unique Character in a String/span>
+
+<details>
+<summary>View First Unique Character in a String</summary>
+
+<br>
+    Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
+
+    Example 1:
+
+    Input: s = "leetcode"
+    Output: 0
+
+    Example 2:
+
+    Input: s = "loveleetcode"
+    Output: 2
+
+    Example 3:
+
+    Input: s = "aabb"
+    Output: -1
+
+    Constraints:
+
+        1 <= s.length <= 105
+        s consists of only lowercase English letters.
+
+<details>
+<summary>Solution</summary>
+
+```
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+
+        char_dict = {}
+
+        for x in range(len(s)):
+
+            if s[x] not in char_dict:
+                char_dict[s[x]] = 1
+
+            else:
+                char_dict[s[x]] +=1
+        # print(char_dict)
+
+
+        for x, y in char_dict.items():
+            if y == 1:
+                print(x)
+                return s.index(x)
+
+        return -1
+```
+
+</details>
+
+<details>
+<summary>Runtime and Space Results</summary>
+
+![Runtime](../../images/first_unique_char_in_string.png)
+![Space](../../images/first_unique_char_space.png)
+
+</details>
+</details>
+
+<br>
+
+### <span style="color: SandyBrown;">Valid Palidrome</span>
+
+<details>
+<summary>View Valid Palidrome</summary>
+
+<br>
+
+    A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+
+    Given a string s, return true if it is a palindrome, or false otherwise.
+
+    Example 1:
+
+    Input: s = "A man, a plan, a canal: Panama"
+    Output: true
+    Explanation: "amanaplanacanalpanama" is a palindrome.
+
+    Example 2:
+
+    Input: s = "race a car"
+    Output: false
+    Explanation: "raceacar" is not a palindrome.
+
+    Example 3:
+
+    Input: s = " "
+    Output: true
+    Explanation: s is an empty string "" after removing non-alphanumeric characters.
+    Since an empty string reads the same forward and backward, it is a palindrome.
+
+Constraints:
+
+    1 <= s.length <= 2 * 105
+    s consists only of printable ASCII characters.
+
+<details>
+<summary>Solution</summary>
+
+```
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+
+        only_chars = "".join(x for x in s if x.isalnum()).lower()
+        reverse_str = only_chars[::-1]
+
+        if only_chars == reverse_str:
+            return True
+        return False
+```
+
+</details>
+
+<details>
+<summary>Runtime and Space Results</summary>
+
+![Runtime](../../images/valid_palidrome_runtime.png)
+![Space](../../images/valid_palidrome-space.png)
+
+</details>
+</details>
+
+<br>
