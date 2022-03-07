@@ -1,5 +1,7 @@
+### <span style="color: SandyBrown;">Reverse String with O(1) SPACE</span>
+
 <details>
-<summary>Reverse String O(1) SPACE</summary>
+<summary>View Reverse String</summary>
 
 #### Instructions
 
@@ -52,8 +54,12 @@
 </details>
 </details>
 
+<br>
+
+### <span style="color: SandyBrown;">Valid Anagram</span>
+
 <details>
-<summary>Valid Annogram</summary>
+<summary>View Anagram</summary>
 
 #### Instructions
 
@@ -119,5 +125,73 @@ class Solution:
 ![Space](../../images/valid_anagram_space.png)
 
 </details>
+</details>
+<br>
+
+### <span style="color: SandyBrown;">Reverse Integer</span>
+
+<details>
+<summary>View Reverse Integer</summary>
+
+<br>
+
+        Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.
+
+        Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
+
+        Example 1:
+
+        Input: x = 123
+        Output: 321
+
+        Example 2:
+
+        Input: x = -123
+        Output: -321
+
+        Example 3:
+
+        Input: x = 120
+        Output: 21
+
+        Constraints:
+
+            -2^31 <= x <= 2^31 - 1
+
+<details>
+<summary>Solution</summary>
+
+```
+class Solution:
+    def reverse(self, x: int) -> int:
+        j = math.pow(2, 31)
+
+        if x < 0:
+            negative_convert = abs(x)
+            number = str(negative_convert)
+            reversed_string = number[::-1]
+            reversed_int = (int(reversed_string))
+            if reversed_int > j:
+                return 0
+            return -abs(reversed_int)
+
+        number = str(x)
+        reversed_string = number[::-1]
+        reversed_int = (int(reversed_string))
+        if reversed_int > j:
+                return 0
+        return reversed_int
+
+```
+
+</details>
+
+<details>
+<summary>Space/Time Results</summary>
+
+![Runtime](../../images/reverser_int.png)
+![Space](../../images/reverse_int.png)
+
+## </details>
 
 </details>
