@@ -2,7 +2,7 @@
 
 <details>
 <summary>STRINGS</summary>
-
+<br>
 <details>
 <summary>Reverse String with O(1) SPACE</summary>
 
@@ -330,12 +330,17 @@ class Solution:
 </details>
 </details>
 
-## </details>
+<!-- END OF STRINGS -->
+</details>
 
 ---
 
+<br>
+<!-- Start Arrays Container -->
 <details>
+
 <summary>ARRAYS</summary>
+<br>
 
 <details>
 <summary>Remove Duplicates from Sorted Array O(1)</summary>
@@ -426,11 +431,71 @@ class Solution:
 ![Space](images/remove_Dups_sorted_array_space.png)
 
 </details>
+
 </details>
 
 ---
 
 <details>
+<summary>Contains Duplicate</summary>
+
+<br>
+
+#### instructions
+
+    Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
+
+
+    Example 1:
+
+    Input: nums = [1,2,3,1]
+    Output: true
+
+    Example 2:
+
+    Input: nums = [1,2,3,4]
+    Output: false
+
+    Example 3:
+
+    Input: nums = [1,1,1,3,3,4,3,2,4,2]
+    Output: true
+
+
+
+    Constraints:
+
+        1 <= nums.length <= 105
+        -109 <= nums[i] <= 109
+
+<details>
+<summary>Solution</summary>
+
+```
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+
+        remove_dups = set(nums)
+
+        if len(nums) == len(remove_dups):
+            return False
+
+        return True
+```
+
+</details>
+
+<details>
+<summary>Runtime and Space Results</summary>
+
+![Runtime](images/contains_duplicate_runtime.png)
+![Space](images/contains_dupliucate_space.png)
+
+</details>
+
+<!-- End of Arrays -->
+</details>
 
 <!-- #### Title -->
 
