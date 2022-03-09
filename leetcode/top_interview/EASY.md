@@ -52,8 +52,8 @@
 <details>
 <summary>Runtime and Space Results</summary>
 
-![Runtime](../../images/reverse_string_runtime.png)
-![Space](../../images/reverse_string_space.png)
+![Runtime](images/reverse_string_runtime.png)
+![Space](images/reverse_string_space.png)
 
 </details>
 </details>
@@ -125,8 +125,8 @@ class Solution:
 <details>
 <summary>Space/Time Results</summary>
 
-![Runtime](../../images/valid_anagram_runtime.png)
-![Space](../../images/valid_anagram_space.png)
+![Runtime](images/valid_anagram_runtime.png)
+![Space](images/valid_anagram_space.png)
 
 </details>
 </details>
@@ -194,15 +194,15 @@ class Solution:
 <details>
 <summary>Space/Time Results</summary>
 
-![Runtime](../../images/reverser_int.png)
-![Space](../../images/reverse_int.png)
+![Runtime](images/reverse_int.png)
+![Space](images/reverser_int.png)
 
 </details>
 
 </details>
 <br>
 
-### <span style="color: #ffffff;">First Unique Character in a String</span>
+ <h2 style="color: #FFA500;">First Unique Character in a String</h2>
 
 <details>
 <summary>View First Unique Character in a String</summary>
@@ -262,8 +262,8 @@ class Solution:
 <details>
 <summary>Runtime and Space Results</summary>
 
-![Runtime](../../images/first_unique_char_in_string.png)
-![Space](../../images/first_unique_char_space.png)
+![Runtime](images/first_unique_char_in_string.png)
+![Space](images/first_unique_char_space.png)
 
 </details>
 </details>
@@ -325,8 +325,8 @@ class Solution:
 <details>
 <summary>Runtime and Space Results</summary>
 
-![Runtime](../../images/valid_palidrome_runtime.png)
-![Space](../../images/valid_palidrome-space.png)
+![Runtime](images/valid_palidrome_runtime.png)
+![Space](images/valid_palidrome-space.png)
 
 </details>
 </details>
