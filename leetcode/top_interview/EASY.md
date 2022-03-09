@@ -1,11 +1,10 @@
-# EASY problems collection from top 100 interview Questions
-
-## Strings
-
-### <span style="color: SandyBrown;">Reverse String with O(1) SPACE</span>
+# Easy 100 top interview Questions
 
 <details>
-<summary>View Reverse String</summary>
+<summary>STRINGS</summary>
+
+<details>
+<summary>Reverse String with O(1) SPACE</summary>
 
 #### Instructions
 
@@ -58,37 +57,35 @@
 </details>
 </details>
 
-<br>
-
-### <span style="color: SandyBrown;">Valid Anagram</span>
+---
 
 <details>
-<summary>View Anagram</summary>
+<summary>Valid Anagram</summary>
 
 #### Instructions
 
-        Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+    Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 
-        An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
-
-
-
-        Example 1:
-
-        Input: s = "anagram", t = "nagaram"
-        Output: true
-
-        Example 2:
-
-        Input: s = "rat", t = "car"
-        Output: false
+    An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
 
 
-        Constraints:
+    Example 1:
 
-            1 <= s.length, t.length <= 5 * 104
-            s and t consist of lowercase English letters.
+    Input: s = "anagram", t = "nagaram"
+    Output: true
+
+    Example 2:
+
+    Input: s = "rat", t = "car"
+    Output: false
+
+
+
+    Constraints:
+
+        1 <= s.length, t.length <= 5 * 104
+        s and t consist of lowercase English letters.
 
 <details>
 <summary>Solution</summary>
@@ -131,37 +128,37 @@ class Solution:
 </details>
 </details>
 
-<br>
-
-### <span style="color: SandyBrown;">Reverse Integer</span>
+---
 
 <details>
-<summary>View Reverse Integer</summary>
+<summary>Reverse Integer</summary>
 
 <br>
 
-        Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.
+#### Instructions
 
-        Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
+    Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.
 
-        Example 1:
+    Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
 
-        Input: x = 123
-        Output: 321
+    Example 1:
 
-        Example 2:
+    Input: x = 123
+    Output: 321
 
-        Input: x = -123
-        Output: -321
+    Example 2:
 
-        Example 3:
+    Input: x = -123
+    Output: -321
 
-        Input: x = 120
-        Output: 21
+    Example 3:
 
-        Constraints:
+    Input: x = 120
+    Output: 21
 
-            -2^31 <= x <= 2^31 - 1
+    Constraints:
+
+        -2^31 <= x <= 2^31 - 1
 
 <details>
 <summary>Solution</summary>
@@ -200,14 +197,16 @@ class Solution:
 </details>
 
 </details>
-<br>
 
- <h2 style="color: #FFA500;">First Unique Character in a String</h2>
+---
 
 <details>
 <summary>View First Unique Character in a String</summary>
 
 <br>
+
+#### Instructions
+
     Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
 
     Example 1:
@@ -268,14 +267,14 @@ class Solution:
 </details>
 </details>
 
-<br>
-
-### <span style="color: SandyBrown;">Valid Palidrome</span>
+---
 
 <details>
-<summary>View Valid Palidrome</summary>
+<summary>Valid Palidrome</summary>
 
 <br>
+
+#### Instructions
 
     A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
 
@@ -331,4 +330,133 @@ class Solution:
 </details>
 </details>
 
+## </details>
+
+---
+
+<details>
+<summary>ARRAYS</summary>
+
+<details>
+<summary>Remove Duplicates from Sorted Array O(1)</summary>
+
+    Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
+
+    Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the first part of the array nums. More formally, if there are k elements after removing the duplicates, then the first k elements of nums should hold the final result. It does not matter what you leave beyond the first k elements.
+
+    Return k after placing the final result in the first k slots of nums.
+
+    Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
+
+    Custom Judge:
+
+    The judge will test your solution with the following code:
+
+    int[] nums = [...]; // Input array
+    int[] expectedNums = [...]; // The expected answer with correct length
+
+    int k = removeDuplicates(nums); // Calls your implementation
+
+    assert k == expectedNums.length;
+    for (int i = 0; i < k; i++) {
+    assert nums[i] == expectedNums[i];
+    }
+
+    If all assertions pass, then your solution will be accepted.
+
+    Example 1:
+
+    Input: nums = [1,1,2]
+    Output: 2, nums = [1,2,_]
+    Explanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.
+    It does not matter what you leave beyond the returned k (hence they are underscores).
+
+    Example 2:
+
+    Input: nums = [0,0,1,1,1,2,2,3,3,4]
+    Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
+    Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
+    It does not matter what you leave beyond the returned k (hence they are underscores).
+
+    Constraints:
+
+        1 <= nums.length <= 3 * 104
+        -100 <= nums[i] <= 100
+        nums is sorted in non-decreasing order.
+
 <br>
+
+instructions
+
+<details>
+<summary>Solution</summary>
+
+```
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+
+
+        count_unique = 1
+        unique = 0
+        current = 1
+
+        if len(nums) == 1:
+            return 1
+
+        while (current < len(nums)):
+
+            if nums[current] == nums[unique]:
+                nums.pop(current)
+
+            else:
+                unique = current
+                count_unique += 1
+                current = current + 1
+
+
+        return count_unique
+```
+
+</details>
+
+<details>
+<summary>Runtime and Space Results</summary>
+
+![Runtime](images/remove_Dups_sorted_array_runtime.png)
+![Space](images/remove_Dups_sorted_array_space.png)
+
+</details>
+</details>
+
+---
+
+<details>
+
+<!-- #### Title -->
+
+<!-- <details>
+<summary></summary>
+
+<br>
+
+instructions
+
+<details>
+<summary>Solution</summary>
+
+```
+
+```
+
+</details>
+
+<details>
+<summary>Runtime and Space Results</summary>
+
+![Runtime]
+![Space]
+
+</details>
+</details>
+
+<br> -->
