@@ -683,6 +683,107 @@ class Solution:
 
 ---
 
+<details>
+<summary>Remove nth node from end on linked list</summary>
+
+<br>
+
+## Instructions
+
+<br>
+
+    Given the head of a linked list, remove the nth node from the end of the list and return its head.
+
+    Example 1:
+
+    Input: head = [1,2,3,4,5], n = 2
+    Output: [1,2,3,5]
+
+    Example 2:
+
+    Input: head = [1], n = 1
+    Output: []
+
+    Example 3:
+
+    Input: head = [1,2], n = 1
+    Output: [1]
+
+
+
+    Constraints:
+
+        The number of nodes in the list is sz.
+        1 <= sz <= 30
+        0 <= Node.val <= 100
+        1 <= n <= sz
+
+
+
+    Follow up: Could you do this in one pass?
+
+<br>
+
+<details>
+<summary>Solution</summary>
+
+        Not the cleanest solution but Im a bit rusty on linked lists, will refactor to better code.
+
+```
+class Solution:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        current = head
+#       if only one node in linked list
+        if current.next == None:
+            current.value = None
+            return
+
+
+        current = head
+        length = 1
+
+#       get length of linked list
+        while(current.next is not None):
+            current = current.next
+            length = length + 1
+
+      # if the target is == to the head
+        current = head
+        if length == n:
+            current.val = None
+            head = current.next
+
+            return head
+
+#       stop at Node previous to target node
+        target_node_index = length - n
+#       reset current back to head to find target node
+        current = head
+        count = 1
+        while(count != target_node_index):
+            count +=1
+            current = current.next
+        current.next.val = None
+        current.next = current.next.next
+
+        return head
+
+```
+
+</details>
+
+<details>
+<summary>Runtime and Space Results</summary>
+
+![Runtime](images/remove_nthnode_end_linkedlist_run.png)
+![Space](images/remove_nthnode_end_linkedlist_space.png)
+
+</details>
+
+</details>
+
+---
+
 <!-- !End of LinkedLIST -->
 </details>
 
