@@ -6,7 +6,11 @@
 <details>
 <summary>Reverse String with O(1) SPACE</summary>
 
-#### Instructions
+<br>
+
+## Instructions
+
+<br>
 
     Write a function that reverses a string. The input string is given as an array of characters s.
 
@@ -62,7 +66,11 @@
 <details>
 <summary>Valid Anagram</summary>
 
-#### Instructions
+<br>
+
+## Instructions
+
+<br>
 
     Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 
@@ -135,7 +143,11 @@ class Solution:
 
 <br>
 
-#### Instructions
+<br>
+
+## Instructions
+
+<br>
 
     Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.
 
@@ -205,7 +217,11 @@ class Solution:
 
 <br>
 
-#### Instructions
+<br>
+
+## Instructions
+
+<br>
 
     Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
 
@@ -274,7 +290,9 @@ class Solution:
 
 <br>
 
-#### Instructions
+## Instructions
+
+<br>
 
     A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
 
@@ -345,6 +363,12 @@ class Solution:
 <details>
 <summary>Remove Duplicates from Sorted Array O(1)</summary>
 
+<br>
+
+## Instructions
+
+<br>
+
     Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
 
     Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the first part of the array nums. More formally, if there are k elements after removing the duplicates, then the first k elements of nums should hold the final result. It does not matter what you leave beyond the first k elements.
@@ -390,8 +414,6 @@ class Solution:
         nums is sorted in non-decreasing order.
 
 <br>
-
-instructions
 
 <details>
 <summary>Solution</summary>
@@ -441,7 +463,9 @@ class Solution:
 
 <br>
 
-#### instructions
+## Instructions
+
+<br>
 
     Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
@@ -494,17 +518,110 @@ class Solution:
 
 </details>
 
-<!-- End of Arrays -->
 </details>
 
-<!-- #### Title -->
+---
 
-<!-- <details>
-<summary></summary>
+<details>
+<summary>Plus One</summary>
 
 <br>
 
-instructions
+## Instructions
+
+<br>
+
+    You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
+
+    Increment the large integer by one and return the resulting array of digits.
+
+
+
+    Example 1:
+
+    Input: digits = [1,2,3]
+    Output: [1,2,4]
+    Explanation: The array represents the integer 123.
+    Incrementing by one gives 123 + 1 = 124.
+    Thus, the result should be [1,2,4].
+
+    Example 2:
+
+    Input: digits = [4,3,2,1]
+    Output: [4,3,2,2]
+    Explanation: The array represents the integer 4321.
+    Incrementing by one gives 4321 + 1 = 4322.
+    Thus, the result should be [4,3,2,2].
+
+    Example 3:
+
+    Input: digits = [9]
+    Output: [1,0]
+    Explanation: The array represents the integer 9.
+    Incrementing by one gives 9 + 1 = 10.
+    Thus, the result should be [1,0].
+
+
+
+    Constraints:
+
+        1 <= digits.length <= 100
+        0 <= digits[i] <= 9
+        digits does not contain any leading 0's.
+
+<br>
+
+<details>
+<summary>Solution</summary>
+
+```
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+
+        string = ""
+        digit_list = []
+
+        for x in digits:
+            string += str(x)
+
+        add_one = int(string) + 1
+
+
+        for digit in str(add_one):
+            digit_list.append(int(digit))
+
+        return digit_list
+```
+
+</details>
+
+<details>
+<summary>Runtime and Space Results</summary>
+
+![Runtime](images/plus_one_runtime.png)
+![Space](images/plus_one_space.png)
+
+</details>
+
+</details>
+
+---
+
+<!-- End of Arrays -->
+</details>
+
+<!-- TODO TEMPLATE -->
+
+<!-- <details>
+<summary>Title</summary>
+
+<br>
+
+## Instructions
+
+<br>
+
+<br>
 
 <details>
 <summary>Solution</summary>
@@ -522,6 +639,7 @@ instructions
 ![Space]
 
 </details>
+
 </details>
 
-<br> -->
+--- -->
