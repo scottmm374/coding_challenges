@@ -1,4 +1,9 @@
-# Easy 100 top interview Questions
+### 100 top interview Questions Leetcode (easy)
+
+#### Python 3
+
+<br>
+<br>
 
 <details>
 <summary>STRINGS</summary>
@@ -346,6 +351,8 @@ class Solution:
 
 </details>
 </details>
+
+---
 
 <details>
 <summary>Longest Common Prefix</summary>
