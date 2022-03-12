@@ -744,8 +744,8 @@ def singleNumber(self, nums: List[int]) -> int:
 <details>
 <summary>Runtime and Space Results</summary>
 
-![Runtime]
-![Space]
+![Runtime](images/single_number_runtime.png)
+![Space](images/single_number_space.png)
 
 </details>
 
