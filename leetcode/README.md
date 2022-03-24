@@ -4,8 +4,8 @@
 
 I have to look up what catagories these fell into when I did them.
 
-- [9. Palidrome_Number]()
-- [1295. Find numbers with even number digits]()
+- [9. Palidrome_Number](https://github.com/scottmm374/coding_challenges/blob/main/leetcode/not_catagorized_yet/find_numbers_with_even_number_digits.py)
+- [1295. Find numbers with even number digits](https://github.com/scottmm374/coding_challenges/blob/main/leetcode/not_catagorized_yet/palidrome_number.py)
 
 #### Top 100 Interview
 
