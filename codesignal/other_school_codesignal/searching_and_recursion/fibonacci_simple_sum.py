@@ -49,10 +49,7 @@ def solution(n):
     for i in range(2, x + 1):
             fibs[i] = fibs[i - 1] + fibs[i - 2]
             
-    print(fibs)     
     for x in fibs:
-       
         if n - x in fibs:
             return True
-            
     return False

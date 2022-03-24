@@ -41,11 +41,11 @@ https://app.codesignal.com/solutions/G2chDD5sJeueDpj4R?accessToken=riSN79DwWmRmw
 """
 
 # Singly-linked lists are already defined with this interface:
-# class ListNode(object):
-#   def __init__(self, x):
-#     self.value = x
-#     self.next = None
-#
+class ListNode(object):
+  def __init__(self, x):
+    self.value = x
+    self.next = None
+
 def solution(l, value):
     curr_node = l
     new_node = ListNode(value)

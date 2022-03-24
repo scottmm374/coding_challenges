@@ -31,6 +31,5 @@ def solution(input_str):
     elif input_str.isnumeric():
         print(input_str)
         return True
-        
     else:
         return False

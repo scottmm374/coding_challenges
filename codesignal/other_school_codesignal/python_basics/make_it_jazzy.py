@@ -37,7 +37,6 @@ def solution(chords):
         if not chords[chord].endswith("7"):
             result = chords[chord]
             my_list.append(result + "7")
-            print(chords[chord])
             
         elif chords[chord].endswith("7"):
             result = chords[chord]
@@ -45,4 +44,3 @@ def solution(chords):
             
     
     return my_list  
-    print(my_list)

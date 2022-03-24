@@ -37,11 +37,8 @@ def solution(s):
         if s[0] == ')' or s[-1] == '(':
             return False
         if y == '(':
-            # print(y)
             left_count += 1
         if y == ')':
-            # print(y)
             right_count += 1
-    # print(right_count, left_count)       
     if right_count == left_count:
         return True

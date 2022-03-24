@@ -26,8 +26,6 @@
 def solution(s):
     
     no_repeat_dict = {}
-    
-    
     if len(s) == 0:
         return '_'
     
@@ -46,3 +44,25 @@ def solution(s):
             return key
             
     return '_'
+
+# <--------------------------------I Solved this one twice I guess, second solution below ---------------->
+
+    # def solution(s):
+
+    # count = {}
+    
+    # for char in s:
+    #     if char in count:
+    #         count[char] +=1
+            
+    #     else:
+    #         count[char] = 1
+            
+            
+    # for key, value in count.items():
+    #     print(key, value)
+        
+    #     if value == 1:
+    #         return key
+              
+    # return '_'

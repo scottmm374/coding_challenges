@@ -27,15 +27,12 @@ def solution(input_str):
     if len(input_str) < 1:
         return -1
         
-        
     for char in input_str:
         if char in letters:
             letters[char] +=1
         else:
             letters[char] = 1 
-            
-    print(letters)
-    
+
     for key, value in letters.items():
         if value == 1:
            return input_str.index(key)
