@@ -132,5 +132,5 @@ dmypy.json
 testing.py
 /Pipfile
 /other
-/codesignal
+/advent_of_code
 .DS_Store
